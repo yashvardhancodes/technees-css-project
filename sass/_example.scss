@@ -1,0 +1,70 @@
+.examples {
+    grid-column: centre-start / centre-end;
+    background-color: $color-primary;
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 4rem;
+
+
+    &__left {
+        background-color: $color-grey;
+        padding: 3rem 11rem;
+        
+        border-radius: 1rem;
+    }
+
+    &__image {
+        height: 8rem;
+        width: 25rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        transform: translateX(-2rem);
+    }
+
+    &__heading {
+        font-size: 2.7rem;
+        color: rgb(238, 236, 236);
+        margin-bottom: 5rem;
+        
+    }
+
+    &__button {
+        font-size: 1.5rem;
+        border: none;
+        background-color: $color-secondary;
+        padding: 2rem 8rem;
+        color: rgb(238, 236, 236);
+        border-radius: 1rem;
+        transition: all .2s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgba($color-secondary , .8);
+        }
+    }
+
+    &__img {
+        width: 80rem;
+        height: 50rem;
+        border-radius: 1rem;
+        
+    }
+}
+
+.btn--2 {
+    background-color: $color-orange;
+
+    &:hover {
+        background-color: rgba($color-orange , .8);
+    }
+}
+
+.btn--3 {
+    background-color: $color-purple;
+
+    &:hover {
+        background-color: rgba($color-purple , .8);
+    }
+}

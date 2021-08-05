@@ -1,0 +1,102 @@
+.projects {
+    grid-column: centre-start / centre-end;
+    background-color: $color-primary;
+    display: grid;
+    grid-template-rows: repeat(3, minmax(min-content));
+    margin-top: 15rem;
+
+    &__head {
+        color: rgba($color-secondary, .8);
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__heading {
+        color: rgb(238, 236, 236);
+        font-size: 6rem;
+        margin-bottom: 10rem;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(max-content, 10rem));
+        grid-gap: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    &__box--1 {
+        background-color: $color-grey;
+        border-radius: 1rem;
+        padding: 5rem;
+    
+    }
+    
+    &__button {
+        border: none;
+        background-color: transparent;
+        color: rgb(238, 236, 236);
+        cursor: pointer;
+        font-size: 2rem;
+        transition: all .2s;
+
+        span {
+            margin-left: 1rem;
+            transition: all .2s;
+        }
+
+        &:hover  {
+            color: #777;
+
+            span {
+                margin-left: 1.4rem;
+            }
+            
+        }
+    }
+
+    
+}
+
+.circle--1 {
+    display: block;
+    border-radius: 50%;
+    height: 9rem;
+    width: 9rem;
+    background-color: $color-orange;
+    margin-bottom: 4rem;
+    
+    color: rgb(238, 236, 236);
+
+    h3 {
+        font-size: 4rem;
+        transform: translateX(2rem) translateY(2rem);
+        
+    }
+}
+
+.blue {
+    background-color: $color-blue;
+}
+
+.purple {
+    background-color: $color-purple;
+}
+
+.paragraph--1 {
+    color: rgb(238, 236, 236);
+    font-size: 3rem;
+    
+}
+
+.paragraph {
+    font-size: 4rem;
+    color: #777;
+    line-height: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+.cheers {
+    font-size: 1.8rem;
+    color: #777;
+}

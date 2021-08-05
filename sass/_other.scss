@@ -1,0 +1,48 @@
+.others {
+    grid-column: centre-start / centre-end;
+    background-color: $color-primary;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    display: flex;
+    &__left {
+        margin-right: 40rem;
+    }
+    &__head {
+        font-size: 9rem;
+        color: rgb(238, 236, 236);
+        
+        transform: translateX(30rem);
+    }
+
+    &__heading {
+        font-size: 4rem;
+        color: #777;
+        margin-bottom: 6rem;
+        font-weight: 400;
+        transform: translateY(1rem);
+
+        span {
+            color: rgb(238, 236, 236);
+
+            span {
+                font-style: italic;
+            }
+        }
+    }
+
+    &__button {
+        border: none;
+        background-color: $color-secondary;
+        color: rgb(238, 236, 236);
+        font-size: 1.7rem;
+        padding: 2rem 2.5rem;
+        border-radius: 1rem;
+        transition: all .2s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgba($color-secondary, .8);
+        }
+    }
+}

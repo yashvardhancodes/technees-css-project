@@ -1,0 +1,48 @@
+.header {
+    background-color: $color-primary;
+    grid-column: centre-start / centre-end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    
+
+    &__image {
+        width: 65rem;
+        height: 65rem;
+        justify-self: center;
+        animation: moveInLeft .8s linear ;
+    }
+
+    &__head {
+        color: rgba($color-secondary, .8);
+        font-size: 2rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__heading {
+        font-size: 7rem;
+        color: rgb(238, 236, 236);
+
+        span {
+            font-style: italic;
+            color: rgba($color-secondary, .8);
+            font-weight: 400;
+        }
+    }
+
+    &__heads {
+        margin-top: 1.5rem;
+        font-size: 3.5rem;
+        color: #777;
+
+        span {
+            color: rgb(238, 236, 236);
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+
+    &__text {
+        animation: moveInRight .8s linear ;
+    }
+}

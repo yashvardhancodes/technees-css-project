@@ -1,0 +1,100 @@
+.footer {
+    grid-column: centre-start / centre-end;
+    background-color: $color-grey;
+    padding: 3rem 6rem;
+    display: flex;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+
+    &__left {
+        margin-right: auto;
+    }
+
+    &__para {
+        font-size: 2rem;
+        margin-top: 2rem;
+        color: #777;
+        margin-bottom: 7rem;
+    }
+
+    &__paras {
+        font-size: 1.3rem;
+        color: #777;
+    }
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: #777;
+    }
+
+    &__icon-2 {
+        height: 3rem;
+        width: 3rem;
+        fill: #777;
+    }
+
+    &__icon-3 {
+        height: 3rem;
+        width: 3rem;
+        fill: #777;
+    }
+
+    &__right {
+        display: flex;
+    }
+
+    &__list {
+        transform: translateX(-6rem);
+        li {
+            font-size: 1.8rem;
+            list-style: none;
+            margin-bottom: 1.4rem;
+
+            a {
+                text-decoration: none;
+                color: #777;
+                
+
+                &:hover {
+                    color: rgb(238, 236, 236);
+                }
+            }
+        }
+    }
+
+    &__lists {
+        
+        li {
+            font-size: 1.8rem;
+            list-style: none;
+            margin-bottom: 1.4rem;
+            a {
+                text-decoration: none;
+                color: #777;
+
+                &:hover {
+                    color: rgb(238, 236, 236);
+                }
+            }
+        }
+    }
+
+    &__icon,
+    &__icon-2,
+    &__icon-3 {
+        transform: translateY(9rem);
+
+        &:hover {
+            cursor: pointer;
+            fill: rgb(238, 236, 236);
+        }
+    }
+
+    &__icon,
+    &__icon-2 {
+        margin-right: 2rem;
+    }
+
+    
+}

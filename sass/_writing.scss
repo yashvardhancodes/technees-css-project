@@ -1,0 +1,32 @@
+.writing {
+    grid-column: centre-start / centre-end;
+    background-color: $color-grey;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10rem;
+    border-radius: 1.5rem;
+
+    &__heading {
+        color: rgb(238, 236, 236);
+        font-size: 8rem;
+        transform: translateX(8.5rem) translateY(2rem);
+    }
+
+    &__paragraph {
+        font-size: 2.2rem;
+        transform: translateX(-4rem) translateY(2rem);
+        
+        p {
+            color: #777;
+        }
+    }
+}
+
+.para--1 {
+    margin-bottom: 1.8rem;
+}
+
+.para--2 {
+
+}

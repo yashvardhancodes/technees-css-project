@@ -1,0 +1,83 @@
+.money {
+    grid-column: centre-start / centre-end;
+    background-color: $color-primary;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 6rem));
+    grid-gap: 2rem;
+    margin-bottom: 5rem;
+
+
+    &__mon {
+        background-color: $color-grey;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    &__images {
+        overflow: hidden;
+        
+
+      
+    }
+    &__image {
+        display: block;
+        width: 41rem;
+        height: 30rem;
+        transform: scale(1);
+        z-index: 1;
+        transition: all .4s;
+        opacity: 1;
+
+        &:hover {
+            transform: scale(1.1);
+            opacity: .8;
+            cursor: pointer;
+        }
+        
+    }
+
+    &__head {
+        color: rgb(238, 236, 236);
+        margin-top: 2rem;
+        font-size: 3rem;
+        font-weight: 400;
+        transform: translateX(3rem);
+    }
+
+    &__heading {
+        color: #777;
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 13rem;
+        transform: translateX(3rem);
+    }
+
+    &__item {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+
+    &__para {
+        color: #777;
+        font-size: 1.5rem;
+        margin-right: auto;
+        margin-left: 2rem;
+    }
+
+    &__btn {
+        margin-right: 2rem;
+        border: none;
+        background-color: $color-secondary;
+        color: rgb(238, 236, 236);
+        padding: .5rem 1rem;
+        border-radius: 10rem;
+        font-size: 1.8rem;
+        transform: translateY(-1.8rem);
+        transition: all .2s;
+
+        &:hover {
+            background-color: rgba($color-secondary, .8);
+            cursor: pointer;
+        }
+    }
+}
